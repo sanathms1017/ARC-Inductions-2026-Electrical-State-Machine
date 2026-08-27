@@ -32,7 +32,7 @@ void loop()
      { if(tempval>45) 
      { systemState=4;}
      
-     else if (gasval>130 && photoval<20)
+     else if (gasval>180 && photoval<20)
      { systemState=5;}
      
      else if(gasval>180)
