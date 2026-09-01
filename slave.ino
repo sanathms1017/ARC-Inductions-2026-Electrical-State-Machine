@@ -57,6 +57,10 @@ void requestEvent()
  int  mappedgasval=map(gasval,0,1023,0,255);
  int mappedtempval=(voltage-0.5)*100;
  
+  if(mappedtempval<0)
+  { mappedtempval=0;
+    }
+ 
  Wire.write(mappedphotoval);
  Wire.write(mappedgasval);
  Wire.write(mappedtempval);
